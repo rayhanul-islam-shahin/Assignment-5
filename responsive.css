@@ -1,0 +1,112 @@
+.main-section {
+    background-image:linear-gradient(to right, #013223 0%, #006747 50%, #013223 100%);
+}
+
+.heart-btn:hover{
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bar{
+  max-width: 675px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.logo-side{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.logo-side img{
+  width: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.logo-side h3{
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-button{
+  display: flex;
+  gap: 50px;
+}
+.nav-button button{
+  padding: 0px 10px;
+  width: 100px;
+  border-radius: 40px;
+}
+
+.main-section{
+max-width: 675px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.main-section div{
+  max-width: 70%;
+  margin: auto;
+}
+.main-section div img{
+  width: 100px;
+  margin: auto;
+}
+
+.service-card {
+  margin: 15px;
+}
+.cards-sc{
+  padding: 15px;
+  width: 250px;
+  height: 250px;
+}
+.cards-sc > button {
+  padding: 0px 20px;
+}
+.cards-sc .btn-2 {
+  padding: 0px 30px;
+  background-color: #00A63E;
+  color: white;
+}
+
+.service-card{
+  display: grid;
+  grid-template-columns:  1fr;
+}
+
+.history-section{
+  margin: 15px 15px 15px 0px;
+
+  height: auto;
+}
+.history-item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  ;
+}
+.history-item button {
+  padding: 10px 30px;
+  background-color: #00A63E;
+  color: #ffffff;
+}
+
+}
