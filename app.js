@@ -85,9 +85,7 @@ for (const btn of copyButtons) {
       copyCount++;
       copyCountSpan.textContent = copyCount;
       alert('Copied: ' + textToCopy);
-    }).catch(() => {
-      alert('Failed to copy text');
-    });
+    })
   });
 }
 

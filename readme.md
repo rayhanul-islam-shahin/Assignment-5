@@ -24,25 +24,18 @@
 
 
 
-
-4. 
-
-
-Event Delegation হলো এমন একটা কৌশল যেখানে অনেক ছোট element এর পরিবর্তে তাদের parent element এ একবারে শুধু একটা event listener বসানো হয়।
-কারণ, event bubbling এর কারণে event parent এ উঠে আসে, সেখানে দেখা যায় element এ event হয়েছে।
-
-উপকারিতা: অনেক কম কোড লিখতে হয়  এবং মেমোরি সাশ্রয় হয়
+4. What is Event Delegation in JavaScript? Why is it useful?
 
 
+      Event Delegation হলো এমন একটা কৌশল যেখানে অনেক ছোট element এর পরিবর্তে তাদের parent element এ একবারে শুধু একটা event listener বসানো হয়।
+      কারণ, event bubbling এর কারণে event parent এ উঠে আসে, সেখানে দেখা যায় element এ event হয়েছে।
+
+      উপকারিতা: অনেক কম কোড লিখতে হয়  এবং মেমোরি সাশ্রয় হয়
 
 
+5. What is the difference between preventDefault() and stopPropagation() methods?
 
 
+       preventDefault() = হলো from tag এর ভেতরে কোনো বাটন ক্লিক করলে এবং সেই বাটনে যদি type="button" দেয়া না থাকে তাহলে from tag সেটাকে সাবমিট বাটন হিসেবে ধরে নেয়, সেটাকে অটো সাবমিট বাটন এর হওয়ার থেকে বিরত রাখতে preventDefault() ব্যবহার করা হয়। 
 
-
-4. What is the difference between preventDefault() and stopPropagation() methods?
-
-
-    preventDefault() = হলো from tag এর ভেতরে কোনো বাটন ক্লিক করলে এবং সেই বাটনে যদি type="button" দেয়া না থাকে তাহলে from tag সেটাকে সাবমিট বাটন হিসেবে ধরে নেয়, সেটাকে অটো সাবমিট বাটন এর হওয়ার থেকে বিরত রাখতে preventDefault() ব্যবহার করা হয়। 
-
-    stopPropagation() = event উপরে বা নিচে যাওয়া বন্ধ করে।
+      stopPropagation() = event উপরে বা নিচে যাওয়া বন্ধ করে।
