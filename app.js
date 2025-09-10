@@ -38,3 +38,58 @@ for (const button of callButtons) {
 
 
 
+
+const callBtns = document.querySelectorAll('.calling-btn');
+
+const historySection = document.querySelector('.history-section');
+const clearButton = historySection.querySelector('button');
+
+
+const historyList = document.createElement('div');
+historySection.appendChild(historyList);
+
+
+for (const btn of callBtns) {
+    btn.addEventListener('click', function () {
+        const card = btn.closest('.cards-sc');
+        const title = card.querySelector('.card-title').textContent;
+        const number = card.querySelector('.card-number').textContent;
+
+        const item = document.createElement('p');
+        item.textContent = title + ' - ' + number;
+        historyList.prepend(item);
+    });
+}
+
+
+clearButton.addEventListener('click', function () {
+    historyList.innerHTML = '';
+});
+
+
+
+const copyButtons = document.querySelectorAll('.copy-btn');
+
+
+const copyCountSpan = document.getElementById('copy-count');
+
+let copyCount = 0;
+
+for (const btn of copyButtons) {
+  btn.addEventListener('click', function() {
+    const card = btn.closest('.cards-sc');
+    const textToCopy = card.querySelector('.card-number').textContent.trim();
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+     
+      copyCount++;
+      copyCountSpan.textContent = copyCount;
+      alert('Copied: ' + textToCopy);
+    }).catch(() => {
+      alert('Failed to copy text');
+    });
+  });
+}
+
+
+

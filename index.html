@@ -15,6 +15,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav class="w-full my-5 ">
         <header class="mx-auto w-7xl flex justify-between items-center nav-bar">
@@ -40,9 +41,10 @@
                 </button>
 
                 <button class="btn bg-[#00A63E] text-white rounded-3xl px-6">
-                    <span>0</span>
+                    <span id="copy-count">0</span>
                     <span>Copy</span>
                 </button>
+
             </div>
         </header>
     </nav>
@@ -70,9 +72,10 @@
                 <p class="font-light">Emergency Contact</p>
                 <p class="font-bold text-3xl card-number">999</p>
                 <span class="bg-[#F2F2F2] p-1.5 text-[13px] inline-block rounded-2xl">Emergency</span><br><br>
-                <button class="btn px-6 "> <i class="fa-solid fa-copy"></i> Copy</button>
+                <button class="btn px-6 copy-btn"> <i class="fa-solid fa-copy"></i> Copy</button>
 
-                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i>
+                    Call</button>
             </div>
 
             <!-- Police Station Number -->
@@ -85,9 +88,10 @@
                 <p class="font-light">Police Number</p>
                 <p class="font-bold text-3xl card-number">999</p>
                 <span class="bg-[#F2F2F2] p-1.5 text-[13px] inline-block rounded-2xl">Police</span><br><br>
-                <button class="btn px-6 "> <i class="fa-solid fa-copy"></i> Copy</button>
+                <button class="btn px-6 copy-btn"> <i class="fa-solid fa-copy"></i> Copy</button>
 
-                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i>
+                    Call</button>
             </div>
 
             <!-- Fire Service Number -->
@@ -100,9 +104,10 @@
                 <p class="font-light">Fire Service Number</p>
                 <p class="font-bold text-3xl card-number">999</p>
                 <span class="bg-[#F2F2F2] p-1.5 text-[13px] inline-block rounded-2xl">Fire</span><br><br>
-                <button class="btn px-6 "> <i class="fa-solid fa-copy"></i> Copy</button>
+                <button class="btn px-6 copy-btn"> <i class="fa-solid fa-copy"></i> Copy</button>
 
-                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i>
+                    Call</button>
             </div>
 
             <!-- Ambulance Service Number -->
@@ -115,9 +120,10 @@
                 <p class="font-light">Ambulance Service</p>
                 <p class="font-bold text-3xl card-number">1994-999</p>
                 <span class="bg-[#F2F2F2] p-1.5 text-[13px] inline-block rounded-2xl">Ambulance</span><br><br>
-                <button class="btn px-6 "> <i class="fa-solid fa-copy"></i> Copy</button>
+                <button class="btn px-6 copy-btn"> <i class="fa-solid fa-copy"></i> Copy</button>
 
-                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i>
+                    Call</button>
             </div>
 
             <!-- Rail-Way Service Number -->
@@ -130,9 +136,10 @@
                 <p class="font-light">Rail-Way Service</p>
                 <p class="font-bold text-3xl card-number">109</p>
                 <span class="bg-[#F2F2F2] p-1.5 text-[13px] inline-block rounded-2xl">Ambulance</span><br><br>
-                <button class="btn px-6 "> <i class="fa-solid fa-copy"></i> Copy</button>
+                <button class="btn px-6 copy-btn"> <i class="fa-solid fa-copy"></i> Copy</button>
 
-                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i>
+                    Call</button>
             </div>
 
             <!-- Brac Service Number -->
@@ -145,26 +152,27 @@
                 <p class="font-light">Brac Service</p>
                 <p class="font-bold text-3xl card-number">16000</p>
                 <span class="bg-[#F2F2F2] p-1.5 text-[13px] inline-block rounded-2xl">Brac</span><br><br>
-                <button class="btn px-6 "> <i class="fa-solid fa-copy"></i> Copy</button>
+                <button class="btn px-6 copy-btn"> <i class="fa-solid fa-copy"></i> Copy</button>
 
-                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-2 px-7 bg-[#00A63E] text-white calling-btn"> <i class="fa-solid fa-phone"></i>
+                    Call</button>
             </div>
         </div>
 
 
 
         <!-- HISTORY SECTION -->
-            <div class="history-section bg-white rounded-2xl border-2 border-gray-200 p-5 w-[380px] h-[580Px] cards-sc">
-                <div class="flex justify-between items-center history-item">
-                    <span class="text-center"><i class="fa-regular fa-clock ml-2"></i> Call History</span>
-                    <button class="btn bg-[#00A63E] rounded-2xl text-white">Clear</button>                    
-                </div>
+        <div class="history-section bg-white rounded-2xl border-2 border-gray-200 p-5 w-[380px] h-[580Px] cards-sc">
+            <div class="flex justify-between items-center history-item">
+                <span class="text-center"><i class="fa-regular fa-clock ml-2"></i> Call History</span>
+                <button class="btn bg-[#00A63E] rounded-2xl text-white">Clear</button>
             </div>
+        </div>
     </section>
 
 
     </div>
-<script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
